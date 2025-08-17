@@ -1,13 +1,13 @@
 #include <iostream>
 #include <iomanip>          // ← fixed, setprecision 사용
 #include <cmath>            // ← std::abs
-#include "baselab/signal_processing/dft.hpp"
-#include "baselab/matplotlibcpp.h"
+#include "signal_processing/signal_processing/dft.hpp"
+#include "signal_processing/matplotlibcpp.h"
 
 
 int main()
 {
-    using namespace baselab::signal;
+    using namespace signal_processing::signal;
     namespace plt = matplotlibcpp;
 
     constexpr std::size_t N = 8;

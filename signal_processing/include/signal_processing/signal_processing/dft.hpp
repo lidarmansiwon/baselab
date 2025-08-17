@@ -3,7 +3,7 @@
 #include <complex>
 #include <cmath>
 
-namespace baselab::signal {
+namespace signal_processing::signal {
 
 using cd = std::complex<double>;
 constexpr double PI = 3.14159265358979323846;

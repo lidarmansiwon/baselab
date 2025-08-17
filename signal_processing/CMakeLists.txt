@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(baselab)
+project(signal_processing)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -27,7 +27,7 @@ add_executable(dft_example src/signal_processing/dft_example.cpp)
 target_include_directories(dft_example PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/..
     ${Python3_INCLUDE_DIRS}
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/baselab            # 헤더 위치
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/signal_processing/signal_processing   # 헤더 위치
 )
 
 target_link_libraries(dft_example PRIVATE Python3::Python Python3::NumPy)
